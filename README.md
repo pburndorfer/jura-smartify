@@ -20,17 +20,17 @@ Each of them seemed to not fit my daily needs or missed some functionality, so I
 ![Webinterface](docs/webinterface.jpg)
 
 ## How to use
-This project was set-up with [PlatformIO](https://platformio.org/) using the Arduino framework for the ESP8266 (Wemos D1 mini in my case).
+This project was set-up with [PlatformIO](https://platformio.org/) using the Arduino framework for the ESP8266 (Wemos D1 mini in my case) and a Jura Impressa S95 (the S75 and other Jura machines maybe compatible too, although not tested by me).
 
 ### Preparing ESP8266
 Check out the code, set your WiFi credentials via `WIFISSID` and `WIFIPASSWORD` variables and flash it to your microcontroller.
 Your new smart Jura coffee machine will show up in your WiFi network as "Jura-S95". Just look for its IP address in your router.
 
 ### Wiring
-The serial service interface has got four pins. From left to right, wire it to your ESP8266 as follows:  
+The serial service interface has got four pins. From left to right, wire it to your ESP8266 (suitable for Wemos D1 mini) as follows:  
 1 - VCC (5V)  
-2 - D7 (GPIO 13) 
+2 - D7 (GPIO 13)  
 3 - GND  
-3 - D6 (GPIO 12)
+4 - D6 (GPIO 12)
 
 ![Wiring](docs/wiring.jpg)
